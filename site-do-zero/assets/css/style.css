@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Nasa;
+    src: url(Nasa.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #fff; 
+	color: #111; 
+	margin:0; 
+	font-family: "Open Sans", sans-serif;
+}
+
+/* Header */
+
+header {
+	padding: 5px;
+	background: #262626;
+	color: #fff;
+	position: fixed;
+	width:100%;
+	top:0;
+}
+
+/* Navigation bar */
+
+nav {
+	background: #111;
+	color: #FFF;
+	padding: 25px;
+}
+
+nav > a {
+	font-family: Nasa;
+	color: #FFF;
+	text-decoration: none;
+}
+
+nav ul {
+	list-style: none;
+	float: right;
+}
+
+nav ul li a {
+	display: inline;
+	margin-right: 5px;
+	font-family: sans-serif;
+	color: #FFF;
+	text-decoration: none;
+}
+nav ul li a:hover {
+	color: #ccc;
+}
+
+/* Section 1 */
+
+.secone {
+	background: url("../img/bg2.jpg");
+	background-attachment: fixed;
+	padding: 100px;
+}
+
+.secone h1 {
+	font-family: Nasa;
+	color: #FFF;
+	text-align: center;
+	margin-bottom: 30px;
+	text-shadow: #000 2px 2px 2px;
+}
+
+.secone h2 {
+	color: #FFF;
+	font-family: sans-serif;
+	text-align: center;
+	text-shadow: #000 2px 2px 2px;
+	font-size: 13px;
+}
+
+/* Section 2 */
+
+.sectwo {
+	padding: 20px;
+	background: #403D58;
+	color: #FFF;
+	text-align: center;
+}
+
+.sectwo h2 {
+	font-size: 50px;
+	font-family: sans-serif;
+	text-shadow: #000 2px 2px 2px;
+}
+
+.sectwo p {
+	margin-top: 15px;
+	text-align: left;
+}
+/* Section 3 */
+
+.secthree {
+	padding: 200px;
+	background: #FFF;
+}
+
+/* Footer */
+
+footer {
+	padding: 30px;
+	background: #111;
+	color: #FFF;
+	text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+	.secone {
+		padding: 400px;
+	}
+
+	.secone h1 {
+		font-size: 100px;
+		color: #FFF;
+		text-align: center;
+		margin-bottom: 30px;
+		text-shadow: #000 2px 2px 2px;
+	}
+
+	.secone h2 {
+		color: #FFF;
+		text-align: center;
+		text-shadow: #000 2px 2px 2px;
+		font-size: 30px;
+	}
+	.sectwo {
+		padding: 200px;
+	}
+}
