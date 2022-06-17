@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Exemplos JS</title>
+		<style>
+div#tal, div#aqui {
+	width: 50px;
+	height: 50px;
+	background-color: red;
+	margin: 10px;
+}
+		</style>
+		<script>
+			function changeColor () {
+				var algo = document.getElementById("tal");
+				algo.style.backgroundColor = "#1F9C20";
+			}
+
+			function goGoogle () {
+				if (confirm ("Você deseja ir para o google?")) {
+					location.href = "https://google.com";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="tal" onclick="changeColor();"></div>
+		<div id="aqui" onclick="goGoogle();"></div>
+	</body>
+</html>
