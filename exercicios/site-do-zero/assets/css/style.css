@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Nasa;
+    src: url(Nasa.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #fff; 
+	color: #111; 
+	margin:0; 
+	font-family: "Open Sans", sans-serif;
+}
+
+/* Navigation bar */
+
+nav {
+	background: #403D58;
+	color: #f1f1f1;
+	font-size: 15px;
+	padding: 5px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+
+nav > a {
+	font-family: Nasa;
+	color: #FFF;
+	font-size: 13px;
+	text-decoration: none;
+	padding: 10px;
+	float: left;
+}
+
+nav ul {
+	list-style: none;
+	float: right;
+	padding: 10px;
+	font-size: 11px;
+}
+
+nav ul li a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	text-decoration: underline;
+}
+
+/* Section 1 */
+
+.secone {
+	background: url("../img/bg1.jpg") transparent;
+	background-attachment: fixed;
+	padding: 100px 50px;
+	color: #FFF;
+	text-align: center;
+	border-bottom: 1px solid #262626;
+}
+
+.secone h1 {
+	font-family: Nasa;
+}
+
+.secone h1, .secone h2 {
+	text-shadow: #000 2px 2px 2px;
+	margin: 0;
+}
+
+.secone h2 {
+	font-size: 14px; 
+	color: #f1f1f1;
+}
+
+/* Section 2 */
+
+.sectwo {
+	padding: 20px;
+	background: #403D58;
+	color: #FFF;
+	text-shadow: #000 2px 2px 2px;
+	text-align: center;
+	border-bottom:1px solid #262626;
+}
+
+.sectwo h2 {
+	font-family: sans-serif;
+	border-bottom:1px solid silver; 
+	padding:10px; 
+	margin:30px auto;
+    max-width:500px;
+}
+
+.sectwo p {
+	font-size: 20px;
+}
+/* Section 3 */
+
+.secthree {
+	padding: 200px;
+	background: url("../img/bg2.jpg") no-repeat #403D58;
+	background-attachment: fixed;
+	border-bottom:1px solid #262626;
+	color:#fff;
+	text-shadow: #000 2px 2px 2px;
+}
+
+.secthree h2 {
+	text-align: center; 
+	 border-bottom:1px solid silver;
+	 max-width:500px;
+	 margin:30px auto;
+	 padding: 10px;
+}
+
+.secthree form {
+	margin: auto;
+	text-align: center;
+}
+
+.secthree form p {
+	padding: 10px;
+}
+
+.secthree form input {
+	width: 300px;
+	border: 2px solid #403D58;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.secthree form textarea {
+	width: 302px; 
+    padding: 10px;
+	 border: 2px solid #403D58; 
+    color: #000; 
+    font-size:20px;
+    border-radius: 10px;
+}
+
+/* Footer */
+
+footer {
+	background: #303030; 
+    padding: 30px; 
+    text-align:center; 
+    color:#fff;
+}
+
+footer ul {
+	list-style: none;
+}
+
+footer ul li {
+    display:inline; 
+    padding: 5px;
+}
+
+footer ul li a {
+    /*text-decoration:none;*/ 
+    color:#f1f1f1; 
+    font-size:40px;
+}
+
+footer ul li a:hover {
+    text-decoration:none; color:#BBE1EE;
+}
+
+.search {
+    cursor:pointer;
+}
+
+hr {
+    margin: auto 300px;
+}
+
+@media (min-width: 992px) {
+
+	nav > a {
+        font-size: 27px;
+    }
+
+	nav ul {
+        padding: 10px; font-size:15px;
+    }
+
+	.secone {
+		padding: 300px;	
+	}
+
+	.secone h1 {
+		font-size: 150px;
+	}
+
+	.secone h2 {
+		font-size: 24px;
+	}
+
+	.sectwo, .secthree {
+		padding: 200px;
+	}
+
+	.secthree form textarea, div.section3 form input  {
+        width: 600px;
+    }
+}
