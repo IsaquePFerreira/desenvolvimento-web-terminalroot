@@ -2,15 +2,139 @@
 <html lang="pt-BR">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Aprendendo Bootstrap</title>
+		<link rel="icon" href="assets/img/icon.png">
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 		<script src="assets/js/jquery-3.3.1.slim.min.js"></script>
 		<script src="assets/js/popper.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+		<style>
+			body {
+				background-color: #FFF;
+				font-family: 'Open Sans', sans-serif;
+			}
+
+			.intro {
+				background-image: url("assets/img/bg.png");
+				color: #FFF;
+			}
+
+			.navbar .navbar-nav .nav-link {
+				color: #FFF;
+			}
+			
+			footer {
+				color: #FFF;
+			}
+		</style>
 	</head>
 	<body>
-		<h1>Blog::Bootstrap</h1>
-		<p>Aprendendo Bootstrap</p>
+		<div class="container-fluid px-0">
+			<header>
+				<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+					<a class="navbar-brand" href="#">
+						<img src="assets/img/logo.png" class="img-fluid" alt="Imagem Logo do Site">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
+						aria-label="Alterna navegação">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="#">
+								Home
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Sobre nós</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="#">Contato</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="#">Pesquisar</a>
+							</li>
+						</ul>
+						
+					</div>
+				</nav>
+				<div class="jumbotron jumbotron-fluid intro mt-5">
+					<div class="container">
+					<div class="row">
+						<div class="col-sm-6">
+							<h1 class="mb-4">#03 Aprendendo Bootstrap</h1>
+							<h2 class="mb-4">Curso de Desenvolvimento Web no Linux</h2>
+							<h6 class="mb-4">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi exercitationem consequatur optio porro iusto, magni dolorum sint cumque. Quas quasi ipsam dolorem ad maiores corporis cupiditate rerum nisi qui.
+							</h6>
+							<h6 class="mb-4">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi exercitationem consequatur optio porro iusto, magni dolorum sint cumque. Quas quasi ipsam dolorem ad maiores corporis cupiditate rerum nisi qui.
+							</h6>
+						</div>
+						<div class="col-sm-6 col-md-5 col-xl-5">
+							<img src="assets/img/intro.png" alt="Imagem com dois despositovos móveis" class="img-fluid">
+						</div>
+					</div>
+					</div>
+				</div>
+			</header>
+			<div class="container main mt-5">
+				<h1 class="text-center">Sobre Nós</h1>
+				<hr>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ex voluptates repudiandae enim numquam quasi itaque maiores distinctio incidunt animi tempora accusantium sint, natus corporis eveniet adipisci iste veniam non.
+				</p>
+				<p>
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta similique perferendis vitae velit repellendus, ipsam eos sapiente, impedit eveniet aliquam inventore mollitia eum hic debitis quas maxime accusantium, modi rerum.
+				</p>
+			</div>
+			<div class="container artigos mt-5">
+				<h1 class="text-center">Artigos Recentes</h1>
+				<hr>
+
+				<div class="row">
+					<div class="card mx-auto" style="width: 18rem;">
+						<img class="card-img-top" src="assets/img/image.svg" alt="Imagem de capa do card">
+						<div class="card-body">
+						  <h5 class="card-title">Título do card</h5>
+						  <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+						  <a href="#" class="btn btn-primary">Visitar</a>
+						</div>
+					</div>
+					<div class="card mx-auto" style="width: 18rem;">
+						<img class="card-img-top" src="assets/img/image.svg" alt="Imagem de capa do card">
+						<div class="card-body">
+						  <h5 class="card-title">Título do card</h5>
+						  <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+						  <a href="#" class="btn btn-primary">Visitar</a>
+						</div>
+					</div>
+					<div class="card mx-auto" style="width: 18rem;">
+						<img class="card-img-top" src="assets/img/image.svg" alt="Imagem de capa do card">
+						<div class="card-body">
+						  <h5 class="card-title">Título do card</h5>
+						  <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+						  <a href="#" class="btn btn-primary">Visitar</a>
+						</div>
+					</div>
+				</div> <!-- end cards-->
+				<hr>
+				<p class="text-center mt-5">
+					<button type="button" class="btn btn-primary btn-lg btn-block">Veja todo os artigos</button>
+				</p>
+			</div> <!-- end artigos-->
+			<footer class="jumbotron jumbotron-fluid bg-dark mb-0 mt-5">
+				<p class="text-center">&reg; Todos os direitos reservados</p>
+			</footer>
+		</div> <!-- end container-->
 	</body>
 </html>
