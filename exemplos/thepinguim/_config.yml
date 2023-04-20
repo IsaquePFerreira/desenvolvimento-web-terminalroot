@@ -1,0 +1,15 @@
+title: The Piguim
+email: marcos@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Site sobre Jekyll feito com Bootstrap, para o Curso de Desenvolvimento Web do Zero no Linux.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter: TerminalRootTV
+github:  terroo
+permalink: /:title/
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
